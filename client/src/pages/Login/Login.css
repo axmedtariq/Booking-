@@ -1,0 +1,39 @@
+/* Login.css */
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lInput {
+  width: 200px;
+  height: 30px; /* Adjust the height as needed */
+  padding: 8px;
+  border-radius: 5px; /* Adjust the padding as needed */
+}
+
+.lButton {
+  width: 200px;
+  border: none;
+  padding: 12px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.lButton:disabled {
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}

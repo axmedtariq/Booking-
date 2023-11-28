@@ -1,0 +1,48 @@
+// Login.scss
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Increased gap for better spacing */
+}
+
+.lInput {
+  height: 40px; /* Increased input height for better visibility */
+  padding: 8px;
+  font-size: 16px; /* Increased font size for better readability */
+}
+
+.lButton {
+  border: none;
+  padding: 12px 24px; /* Increased padding for a larger button */
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px; /* Increased font size for better visibility */
+}
+
+.lButton:disabled {
+  background-color: #0071c28c;
+  cursor: not-allowed;
+}
+
+// Responsive styling for smaller screens
+@media (max-width: 600px) {
+  .lContainer {
+    gap: 12px; /* Adjusted gap for smaller screens */
+  }
+
+  .lInput,
+  .lButton {
+    width: 100%; /* Make inputs and button full width on smaller screens */
+  }
+}
